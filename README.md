@@ -15,14 +15,17 @@ Docker file for Jenkins
 # Commands for Slave : 
 
 ``` sudo docker image build -f Dockerfile_slave -t jenkins_ssh_slave ```
+
 Enable Docker remote API
 
 ```/lib/systemd/system/docker.service ```
 
 Add the below line 
+
 ``` ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:4243 -H unix:///var/run/docker.sock ``` 
 
 Restart docker service
+
 ``` sudo systemctl daemon-reload
 sudo service docker restart```
 
