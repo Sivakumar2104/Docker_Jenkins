@@ -26,6 +26,6 @@ Add the below line
 
 Restart docker service
 
-``` sudo systemctl daemon-reload
-sudo service docker restart```
+``` sudo systemctl daemon-reload ```
+``` sudo service docker restart ```
 
